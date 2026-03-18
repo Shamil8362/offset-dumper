@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+backend/build/
+
+# Backend binary — built via CI, NOT committed to repo
+# Download from GitHub Releases or build locally with:
+#   cmake -S backend -B backend/build -G "Visual Studio 17 2022" -A x64
+#   cmake --build backend/build --config Release
+#   copy backend\build\Release\offset_backend.exe backend\
+backend/offset_backend.exe
+
+# Vite cache
+.vite/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor
+.vscode/
+.idea/
